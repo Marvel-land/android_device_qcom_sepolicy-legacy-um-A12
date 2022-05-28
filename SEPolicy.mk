@@ -36,7 +36,8 @@ ifneq (,$(filter sdm660 msm8937 msm8953 msm8996 msm8998, $(TARGET_BOARD_PLATFORM
                  $(SEPOLICY_PATH) \
                  $(SEPOLICY_PATH)/legacy/vendor/common/sysmonapp \
                  $(SEPOLICY_PATH)/legacy/vendor/ssg \
-                 $(SEPOLICY_PATH)/legacy/vendor/common
+                 $(SEPOLICY_PATH)/legacy/vendor/common \
+                 $(SEPOLICY_PATH)/legacy/vendor/msm8937
 
     ifeq ($(TARGET_SEPOLICY_DIR),)
       BOARD_SEPOLICY_DIRS += $(SEPOLICY_PATH)/legacy/vendor/$(TARGET_BOARD_PLATFORM)
